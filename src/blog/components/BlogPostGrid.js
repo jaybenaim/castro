@@ -17,15 +17,15 @@ class BlogPostGrid extends Component{
                 <div className="col-sm-6 col-12" key={i}>
                     <div className="blog-post-slider__single-slide blog-post-slider__single-slide--grid-view">
                         <div className="blog-post-slider__image section-space--bottom--30">
-                        <a href={`${process.env.PUBLIC_URL}/${val.postLink}`}><img src={`assets/img/blog/${val.postImg}`} className="img-fluid" alt="" /></a>
+                        <a href={`${process.env.REACT_APP_PUBLIC_URL}/${val.postLink}`}><img src={`assets/img/blog/${val.postImg}`} className="img-fluid" alt="" /></a>
                         </div>
                         <div className="blog-post-slider__content">
                         <p className="post-date">{val.postDate}</p>
                         <h3 className="post-title">
-                            <a href={`${process.env.PUBLIC_URL}/${val.postLink}`}>{val.postTitle}</a>
+                            <a href={`${process.env.REACT_APP_PUBLIC_URL}/${val.postLink}`}>{val.postTitle}</a>
                         </h3>
                         <p className="post-excerpt">{val.postExcerpt}</p>
-                        <a href={`${process.env.PUBLIC_URL}/${val.postLink}`} className="see-more-link">SEE MORE</a>
+                        <a href={`${process.env.REACT_APP_PUBLIC_URL}/${val.postLink}`} className="see-more-link">SEE MORE</a>
                         </div>
                     </div>
                 </div>

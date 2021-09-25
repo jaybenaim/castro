@@ -3,7 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 class ServiceTabTwo extends Component{
 
     render(){
-        
+
         /* service tab menu */
         let serviceTabMenuData = [
             {iconName: 'flaticon-002-welding', tabMenuName: 'Land Mining'},
@@ -18,9 +18,9 @@ class ServiceTabTwo extends Component{
             )
         });
 
-        
+
         /* service tab content */
-        
+
         let serviceTabContentData = [
             {bgUrl: "service-tab1.jpg", contentTitle: 'Land Mining', contentDesc: 'Lorem ipsum dolor sit amet, consectet adipisicin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', serviceLink: 'service-details-left-sidebar'},
             {bgUrl: "service-tab1.jpg", contentTitle: 'Work Management', contentDesc: 'Lorem ipsum dolor sit amet, consectet adipisicin elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', serviceLink: 'service-details-left-sidebar'},
@@ -35,7 +35,7 @@ class ServiceTabTwo extends Component{
                         <div className="service-tab__single-content">
                             <h3 className="service-tab__title">{val.contentTitle}</h3>
                             <p className="service-tab__text">{val.contentDesc}</p>
-                            <a href={`${process.env.PUBLIC_URL}/${val.serviceLink}`} className="see-more-link">SEE MORE</a>
+                            <a href={`${process.env.REACT_APP_PUBLIC_URL}/${val.serviceLink}`} className="see-more-link">SEE MORE</a>
                         </div>
                     </div>
                 </TabPanel>
@@ -59,7 +59,7 @@ class ServiceTabTwo extends Component{
                             </div>
                             <div className="col-lg-12">
                                 {/* service tab wrapper */}
-                                
+
                                 <div className="service-tab-wrapper">
                                 <Tabs>
                                     <div className="row no-gutters">

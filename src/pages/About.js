@@ -146,7 +146,7 @@ class About extends Component {
                       Itaque earum rerum hic tenetur a sapie
                     </p>
                     <a
-                      href={`${process.env.PUBLIC_URL}/contact-us`}
+                      href="/contact-us"
                       className="ht-btn--default ht-btn--default--dark-hover section-space--top--20"
                     >
                       Contact us

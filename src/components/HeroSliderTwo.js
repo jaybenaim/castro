@@ -41,7 +41,7 @@ class HeroSliderTwo extends Component{
                                 <div className="hero-slider__content m-auto text-center">
                                     <h2 className="hero-slider__title">{val.sliderTitle}</h2>
                                     <p className="hero-slider__text">{val.sliderSubtitle}</p>
-                                    <a className="hero-slider__btn hero-slider__btn--style2" href={`${process.env.PUBLIC_URL}/${val.btnLink}`}> GET START</a>
+                                    <a className="hero-slider__btn hero-slider__btn--style2" href={`${process.env.REACT_APP_PUBLIC_URL}/${val.btnLink}`}> GET START</a>
                                 </div>
                                 </div>
                             </div>

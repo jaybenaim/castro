@@ -52,48 +52,26 @@ class MobileMenu extends Component{
                     </a>
                     <div className="offcanvas-wrapper">
                         <div className="offcanvas-inner-content">
-                            <div className="offcanvas-mobile-search-area">
+                            {/* <div className="offcanvas-mobile-search-area">
                                 <form action="#">
                                 <input type="search" placeholder="Search ..." />
                                 <button type="submit"><i className="fa fa-search" /></button>
                                 </form>
-                            </div>
+                            </div> */}
                             <nav className="offcanvas-navigation" id="offcanvas-navigation">
                                 <ul>
-                                    <li className="menu-item-has-children">
-                                    <Link to={`${process.env.PUBLIC_URL}/home-one`}>HOME</Link>
-                                        <ul className="sub-menu">
-                                            <li><Link to={`${process.env.PUBLIC_URL}/home-one`}>Homepage One</Link></li>
-                                            <li><Link to={`${process.env.PUBLIC_URL}/home-two`}>Homepage Two</Link></li>
-                                            <li><Link to={`${process.env.PUBLIC_URL}/home-three`}>Homepage Three</Link></li>
-                                        </ul>
+                                    <li>
+                                        <Link to="/">HOME</Link>
                                     </li>
-                                    <li><Link to={`${process.env.PUBLIC_URL}/about-us`}>ABOUT</Link></li>
-                                    <li className="menu-item-has-children">
-                                        <Link to={`${process.env.PUBLIC_URL}/services`}>SERVICE</Link>
-                                        <ul className="sub-menu">
-                                            <li><Link to={`${process.env.PUBLIC_URL}/services`}>Service Page</Link></li>
-                                            <li><Link to={`${process.env.PUBLIC_URL}/service-details-left-sidebar`}>Service Details Left Sidebar</Link></li>
-                                            <li><Link to={`${process.env.PUBLIC_URL}/service-details-right-sidebar`}>Service Details Right Sidebar</Link></li>
-                                        </ul>
+                                    <li>
+                                        <Link to="/about-us">ABOUT</Link></li>
+                                    <li>
+                                        <Link to="/services">SERVICE</Link>
                                     </li>
-                                    <li className="menu-item-has-children">
-                                        <Link to={`${process.env.PUBLIC_URL}/projects`} >PROJECT</Link>
-                                        <ul className="sub-menu">
-                                            <li><Link to={`${process.env.PUBLIC_URL}/projects`} >Project Page</Link></li>
-                                            <li><Link to={`${process.env.PUBLIC_URL}/project-details`}>Project Details</Link></li>
-                                        </ul>
+                                    <li>
+                                        <Link to="/projects" >PROJECT</Link>
                                     </li>
-                                    <li className="menu-item-has-children">
-                                        <Link to={`${process.env.PUBLIC_URL}/blog-left-sidebar`}>BLOG</Link>
-                                        <ul className="sub-menu">
-                                            <li><Link to={`${process.env.PUBLIC_URL}/blog-left-sidebar`}>Blog Left Sidebar</Link></li>
-                                            <li><Link to={`${process.env.PUBLIC_URL}/blog-right-sidebar`}>Blog Right Sidebar</Link></li>
-                                            <li><Link to={`${process.env.PUBLIC_URL}/blog-details-left-sidebar`}>Blog Details Left Sidebar</Link></li>
-                                            <li><Link to={`${process.env.PUBLIC_URL}/blog-details-right-sidebar`}>Blog Details Right Sidebar</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li><Link to={`${process.env.PUBLIC_URL}/contact-us`}>CONTACT</Link> </li>
+                                    <li><Link to="/contact-us">CONTACT</Link> </li>
                                 </ul>
                             </nav>
                             <div className="offcanvas-widget-area">

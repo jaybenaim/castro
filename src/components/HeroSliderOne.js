@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Swiper from 'react-id-swiper';
 
 class HeroSliderOne extends Component{
-    
+
     render(){
         const params = {
             slidesPerView : 1,
@@ -33,7 +33,7 @@ class HeroSliderOne extends Component{
 
         let DataList = data.map((val, i)=>{
             return(
-                
+
                 <div className="swiper-slide" key={i}>
                     <div className="hero-slider__single-item" style={{ backgroundImage: `url(assets/img/slider/${val.bgImg})` }} >
                         <div className="hero-slider__content-wrapper">
@@ -43,7 +43,7 @@ class HeroSliderOne extends Component{
                                 <div className="hero-slider__content">
                                     <h2 className="hero-slider__title">{val.sliderTitle}</h2>
                                     <p className="hero-slider__text">{val.sliderSubtitle}</p>
-                                    <a className="hero-slider__btn" href={`${process.env.PUBLIC_URL}/${val.btnLink}`}> GET START</a>
+                                    <a className="hero-slider__btn" href={`${process.env.REACT_APP_PUBLIC_URL}/${val.btnLink}`}> GET START</a>
                                 </div>
                                 </div>
                             </div>

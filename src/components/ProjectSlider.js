@@ -10,16 +10,16 @@ class ProjectSlider extends Component{
         this.goPrev = this.goPrev.bind(this)
         this.swiper = null
       }
-    
+
       goNext() {
         if (this.swiper) this.swiper.slideNext()
       }
-    
+
       goPrev() {
         if (this.swiper) this.swiper.slidePrev()
       }
-    
-      
+
+
     render(){
 
         const params = {
@@ -27,9 +27,9 @@ class ProjectSlider extends Component{
             loop: true,
             speed: 1000,
             spaceBetween: 30
-        
+
         };
-        
+
         let data = [
             {img: '1.jpg', sliderTitle: 'Construction Management', sliderShortDesc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim', sliderLink: 'project-details'},
             {img: '1.jpg', sliderTitle: 'Power and Energy', sliderShortDesc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim', sliderLink: 'project-details'},
@@ -52,7 +52,7 @@ class ProjectSlider extends Component{
                                 <h3 className="count">{'0'+(i+1)}</h3>
                                 <h2 className="title">{val.sliderTitle}</h2>
                                 <p className="desc">{val.sliderShortDesc}</p>
-                                <a href={`${process.env.PUBLIC_URL}/${val.sliderLink}`} className="see-more-link see-more-link--color">VIEW MORE</a>
+                                <a href={`${process.env.REACT_APP_PUBLIC_URL}/${val.sliderLink}`} className="see-more-link see-more-link--color">VIEW MORE</a>
                             </div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ class ProjectSlider extends Component{
                                 <Swiper {...params} ref={node => { if (node) this.swiper = node.swiper }}>
                                     {DataList}
                                 </Swiper>
-                            
+
                                 <button className="ht-swiper-button-prev ht-swiper-button-nav" onClick={this.goPrev}><i className="ion-ios-arrow-left" /></button>
                                 <button className="ht-swiper-button-next ht-swiper-button-nav" onClick={this.goNext}><i className="ion-ios-arrow-forward" /></button>
                             </div>

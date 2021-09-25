@@ -30,7 +30,7 @@ class ServiceDetailsLeftSidebar extends Component {
                       <a href="/">Home</a>
                     </li>
                     <li>
-                      <a href={`${process.env.PUBLIC_URL}/services`}>
+                      <a href="/services">
                         Services
                       </a>
                     </li>

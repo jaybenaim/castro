@@ -30,7 +30,7 @@ class BlogDetailsLeftSidebar extends Component {
                       <a href="/">Home</a>
                     </li>
                     <li>
-                      <a href={`${process.env.PUBLIC_URL}/blog-left-sidebar`}>
+                      <a href={`${process.env.REACT_APP_PUBLIC_URL}/blog-left-sidebar`}>
                         Blog
                       </a>
                     </li>

@@ -49,7 +49,7 @@ class Footer extends Component {
                       {/* footer intro wrapper */}
                       <div className="footer-intro-wrapper">
                         <div className="footer-logo">
-                          <a href={`${process.env.PUBLIC_URL}/home-one`}>
+                          <a href="/">
                             <img
                               src="assets/img/logo/logo-light.png"
                               className="img-fluid"
@@ -70,21 +70,21 @@ class Footer extends Component {
                         <h4 className="footer-widget__title">USEFUL LINKS</h4>
                         <ul className="footer-widget__navigation">
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>Home</a>
+                            <a href={`${process.env.REACT_APP_PUBLIC_URL}/`}>Home</a>
                           </li>
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
+                            <a href={`${process.env.REACT_APP_PUBLIC_URL}/`}>
                               Company News
                             </a>
                           </li>
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>Projects</a>
+                            <a href={`${process.env.REACT_APP_PUBLIC_URL}/`}>Projects</a>
                           </li>
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>Careers</a>
+                            <a href={`${process.env.REACT_APP_PUBLIC_URL}/`}>Careers</a>
                           </li>
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
+                            <a href={`${process.env.REACT_APP_PUBLIC_URL}/`}>
                               Contact Us
                             </a>
                           </li>
@@ -97,23 +97,23 @@ class Footer extends Component {
                         <h4 className="footer-widget__title">USEFUL LINKS</h4>
                         <ul className="footer-widget__navigation">
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
+                            <a href={`${process.env.REACT_APP_PUBLIC_URL}/`}>
                               Our Services
                             </a>
                           </li>
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>Showcase</a>
+                            <a href={`${process.env.REACT_APP_PUBLIC_URL}/`}>Showcase</a>
                           </li>
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>Affliates</a>
+                            <a href={`${process.env.REACT_APP_PUBLIC_URL}/`}>Affliates</a>
                           </li>
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
+                            <a href={`${process.env.REACT_APP_PUBLIC_URL}/`}>
                               Disclaimer
                             </a>
                           </li>
                           <li>
-                            <a href={`${process.env.PUBLIC_URL}/`}>
+                            <a href={`${process.env.REACT_APP_PUBLIC_URL}/`}>
                               Privacy Policy
                             </a>
                           </li>

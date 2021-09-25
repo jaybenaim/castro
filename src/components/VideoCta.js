@@ -10,7 +10,7 @@ class VideoCta extends Component{
         }
         this.openModal = this.openModal.bind(this)
       }
-     
+
       openModal () {
         this.setState({isOpen: true})
       }
@@ -26,7 +26,7 @@ class VideoCta extends Component{
                             <h4 className="video-cta-content__small-title">ABOUT US</h4>
                             <h3 className="video-cta-content__title">We are Best construction in the world</h3>
                             <p className="video-cta-content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-                            <a href={`${process.env.PUBLIC_URL}/contact-us`} className="ht-btn ht-btn--round">CONTACT US</a>
+                            <a href="/contact-us" className="ht-btn ht-btn--round">CONTACT US</a>
                             </div>
                         </div>
                         <div className="col-lg-5 offset-lg-1 col-md-6">

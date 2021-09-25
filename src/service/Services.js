@@ -65,7 +65,7 @@ class Services extends Component {
           <div className="service-grid-item">
             <div className="service-grid-item__image">
               <div className="service-grid-item__image-wrapper">
-                <a href={`${process.env.PUBLIC_URL}/${val.pageLink}`}>
+                <a href={`${process.env.REACT_APP_PUBLIC_URL}/${val.pageLink}`}>
                   <img
                     src={`assets/img/service/${val.img}`}
                     className="img-fluid"
@@ -79,13 +79,13 @@ class Services extends Component {
             </div>
             <div className="service-grid-item__content">
               <h3 className="title">
-                <a href={`${process.env.PUBLIC_URL}/${val.pageLink}`}>
+                <a href={`${process.env.REACT_APP_PUBLIC_URL}/${val.pageLink}`}>
                   {val.serviceTitle}
                 </a>
               </h3>
               <p className="subtitle">{val.serviceSubtitle}</p>
               <a
-                href={`${process.env.PUBLIC_URL}/${val.pageLink}`}
+                href={`${process.env.REACT_APP_PUBLIC_URL}/${val.pageLink}`}
                 className="see-more-link"
               >
                 SEE MORE

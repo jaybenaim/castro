@@ -46,7 +46,7 @@ class ServiceGridSlider extends Component{
                     <div className="service-grid-item">
                     <div className="service-grid-item__image">
                         <div className="service-grid-item__image-wrapper">
-                        <a href={`${process.env.PUBLIC_URL}/${val.serviceUrl}`}>
+                        <a href={`${process.env.REACT_APP_PUBLIC_URL}/${val.serviceUrl}`}>
                             <img src={`assets/img/service/${val.img}`} className="img-fluid" alt="" />
                         </a>
                         </div>
@@ -56,10 +56,10 @@ class ServiceGridSlider extends Component{
                     </div>
                     <div className="service-grid-item__content">
                         <h3 className="title">
-                        <a href={`${process.env.PUBLIC_URL}/${val.serviceUrl}`}>{val.serviceTitle}</a>
+                        <a href={`${process.env.REACT_APP_PUBLIC_URL}/${val.serviceUrl}`}>{val.serviceTitle}</a>
                         </h3>
                         <p className="subtitle">{val.serviceExcerpt}</p>
-                        <a href={`${process.env.PUBLIC_URL}/${val.serviceUrl}`} className="see-more-link">SEE MORE</a>
+                        <a href={`${process.env.REACT_APP_PUBLIC_URL}/${val.serviceUrl}`} className="see-more-link">SEE MORE</a>
                     </div>
                     </div>
                 </div>

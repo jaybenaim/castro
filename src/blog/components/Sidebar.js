@@ -17,12 +17,12 @@ class Sidebar extends Component{
 
         let categoryDataList = categoryData.map((val, i)=>{
             return(
-                <li key={i}><a href={`${process.env.PUBLIC_URL}/${val.categoryLink}`}>{val.categoryName}</a></li>
+                <li key={i}><a href={`${process.env.REACT_APP_PUBLIC_URL}/${val.categoryLink}`}>{val.categoryName}</a></li>
             )
         });
-        
+
         /* sidebar popular post */
-        
+
         let popularPostData = [
             {postImage: 'sidebar-blog-1.jpg', postTitle: 'What are Groundworkers and what do they do?', postLink: 'blog-details-left-sidebar', postDate: '30 October 2019'},
             {postImage: 'sidebar-blog-2.jpg', postTitle: 'What are Groundworkers and what do they do?', postLink: 'blog-details-left-sidebar', postDate: '30 October 2019'},
@@ -34,16 +34,16 @@ class Sidebar extends Component{
                 <div className="sidebar-blog" key={i}>
                 <a href="blog-details-left-sidebar.html" className="image"><img src={`assets/img/blog/${val.postImage}`} alt="" /></a>
                     <div className="content">
-                        <h5><a href={`${process.env.PUBLIC_URL}/${val.postLink}`}>What are Groundworkers and what do they do?</a></h5>
+                        <h5><a href={`${process.env.REACT_APP_PUBLIC_URL}/${val.postLink}`}>What are Groundworkers and what do they do?</a></h5>
                         <span>{val.postDate}</span>
                     </div>
                 </div>
             )
         });
 
-        
+
         /* sidebar tag */
-        
+
         let tagData = [
             {tagLink: "blog-left-sidebar", tagName: "Renovation"},
             {tagLink: "blog-left-sidebar", tagName: "Architecture"},
@@ -56,7 +56,7 @@ class Sidebar extends Component{
 
         let tagDataList = tagData.map((val, i)=>{
             return(
-                <li key={i}><a href={`${process.env.PUBLIC_URL}/${val.tagLink}`}>{val.tagName}</a></li>
+                <li key={i}><a href={`${process.env.REACT_APP_PUBLIC_URL}/${val.tagLink}`}>{val.tagName}</a></li>
             )
         });
 

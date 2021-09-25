@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 class BlogPostContent extends Component{
     render(){
-            
+
         /* post tag */
-        
+
         let tagData = [
             {tagLink: "blog-left-sidebar", tagName: "Renovation"},
             {tagLink: "blog-left-sidebar", tagName: "Architecture"},
@@ -13,7 +13,7 @@ class BlogPostContent extends Component{
 
         let tagDataList = tagData.map((val, i)=>{
             return(
-                <li key={i}><a href={`${process.env.PUBLIC_URL}/${val.tagLink}`}>{val.tagName}</a></li>
+                <li key={i}><a href={`${process.env.REACT_APP_PUBLIC_URL}/${val.tagLink}`}>{val.tagName}</a></li>
             )
         });
 

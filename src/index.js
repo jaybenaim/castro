@@ -9,108 +9,104 @@ import HomeThree from "./HomeThree";
 import About from "./pages/About";
 import Services from "./service/Services";
 import ServiceDetailsLeftSidebar from "./service/ServiceDetailsLeftSidebar";
-import ServiceDetailsRightSidebar from "./service/ServiceDetailsRightSidebar";
 import Projects from "./project/Projects";
 import ProjectDetails from "./project/ProjectDetails";
-import BlogLeftSidebar from "./blog/BlogLeftSidebar";
-import BlogRightSidebar from "./blog/BlogRightSidebar";
-import BlogDetailsLeftSidebar from "./blog/BlogDetailsLeftSidebar";
-import BlogDetailsRightSidebar from "./blog/BlogDetailsRightSidebar";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/404";
 import NoMAtch from "./pages/404";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
+
 
 class Root extends Component {
   render() {
     return (
-      <BrowserRouter basename={"/"}>
+      <HashRouter basename="/castro">
         <Switch>
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/`}
-            component={HomeOne}
+            path='/'
+            component={HomeThree}
           />
 
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/home-one`}
+            path='/home-one'
             component={HomeOne}
           />
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/home-two`}
+            path='/home-two'
             component={HomeTwo}
           />
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/home-three`}
+            path='/home-three'
             component={HomeThree}
           />
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/about-us`}
+            path='/about-us'
             component={About}
           />
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/services`}
+            path='/services'
             component={Services}
           />
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/service-details-left-sidebar`}
+            path='/service-details-left-sidebar'
             component={ServiceDetailsLeftSidebar}
           />
-          <Route
+          {/* <Route
             exact
-            path={`${process.env.PUBLIC_URL}/service-details-right-sidebar`}
+            path='/service-details-right-sidebar'
             component={ServiceDetailsRightSidebar}
-          />
+          /> */}
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/projects`}
+            path='/projects'
             component={Projects}
           />
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/project-details`}
+            path='/project-details'
             component={ProjectDetails}
           />
-          <Route
+          {/* <Route
             exact
-            path={`${process.env.PUBLIC_URL}/blog-left-sidebar`}
+            path='/blog-left-sidebar'
             component={BlogLeftSidebar}
           />
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/blog-right-sidebar`}
+            path='/blog-right-sidebar'
             component={BlogRightSidebar}
           />
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/blog-details-left-sidebar`}
+            path='/blog-details-left-sidebar'
             component={BlogDetailsLeftSidebar}
           />
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/blog-details-right-sidebar`}
+            path='/blog-details-right-sidebar'
             component={BlogDetailsRightSidebar}
-          />
+          /> */}
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/contact-us`}
+            path='/contact-us'
             component={Contact}
           />
           <Route
             exact
-            path={`${process.env.PUBLIC_URL}/404`}
+            path='/404'
             component={PageNotFound}
           />
           <Route component={NoMAtch} />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
