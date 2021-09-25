@@ -3,9 +3,9 @@ import "react-app-polyfill/stable";
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "./assets/scss/style.scss";
-import HomeOne from "./HomeOne";
-import HomeTwo from "./HomeTwo";
-import HomeThree from "./HomeThree";
+// import HomeOne from "./HomeOne";
+// import HomeTwo from "./HomeTwo";
+// import HomeThree from "./HomeThree";
 // import About from "./pages/About";
 // import Services from "./service/Services";
 // import ServiceDetailsLeftSidebar from "./service/ServiceDetailsLeftSidebar";
@@ -14,8 +14,9 @@ import HomeThree from "./HomeThree";
 // import Contact from "./pages/Contact";
 import PageNotFound from "./pages/404";
 import NoMAtch from "./pages/404";
-import { Switch, Route, HashRouter, BrowserRouter } from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
+import ComingSoon from "pages/ComingSoon/ComingSoon";
 
 
 class Root extends Component {
@@ -26,9 +27,10 @@ class Root extends Component {
           <Route
             exact
             path='/'
-            component={HomeThree}
+            component={ComingSoon}
           />
 
+          {/*
           <Route
             exact
             path='/home-one'
@@ -44,7 +46,6 @@ class Root extends Component {
             path='/home-three'
             component={HomeThree}
           />
-          {/*
           <Route
             exact
             path='/about-us'
