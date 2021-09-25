@@ -6,12 +6,12 @@ import "./assets/scss/style.scss";
 import HomeOne from "./HomeOne";
 import HomeTwo from "./HomeTwo";
 import HomeThree from "./HomeThree";
-import About from "./pages/About";
-import Services from "./service/Services";
-import ServiceDetailsLeftSidebar from "./service/ServiceDetailsLeftSidebar";
-import Projects from "./project/Projects";
-import ProjectDetails from "./project/ProjectDetails";
-import Contact from "./pages/Contact";
+// import About from "./pages/About";
+// import Services from "./service/Services";
+// import ServiceDetailsLeftSidebar from "./service/ServiceDetailsLeftSidebar";
+// import Projects from "./project/Projects";
+// import ProjectDetails from "./project/ProjectDetails";
+// import Contact from "./pages/Contact";
 import PageNotFound from "./pages/404";
 import NoMAtch from "./pages/404";
 import { Switch, Route, HashRouter } from "react-router-dom";
@@ -21,7 +21,7 @@ import * as serviceWorker from "./serviceWorker";
 class Root extends Component {
   render() {
     return (
-      <HashRouter basename="/castro">
+      <HashRouter>
         <Switch>
           <Route
             exact
@@ -44,6 +44,7 @@ class Root extends Component {
             path='/home-three'
             component={HomeThree}
           />
+          {/*
           <Route
             exact
             path='/about-us'
@@ -59,11 +60,11 @@ class Root extends Component {
             path='/service-details-left-sidebar'
             component={ServiceDetailsLeftSidebar}
           />
-          {/* <Route
+          <Route
             exact
             path='/service-details-right-sidebar'
             component={ServiceDetailsRightSidebar}
-          /> */}
+          />
           <Route
             exact
             path='/projects'
@@ -74,7 +75,7 @@ class Root extends Component {
             path='/project-details'
             component={ProjectDetails}
           />
-          {/* <Route
+          <Route
             exact
             path='/blog-left-sidebar'
             component={BlogLeftSidebar}
@@ -93,12 +94,13 @@ class Root extends Component {
             exact
             path='/blog-details-right-sidebar'
             component={BlogDetailsRightSidebar}
-          /> */}
+          />
           <Route
             exact
             path='/contact-us'
             component={Contact}
           />
+           */}
           <Route
             exact
             path='/404'
