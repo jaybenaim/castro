@@ -14,14 +14,14 @@ import HomeThree from "./HomeThree";
 // import Contact from "./pages/Contact";
 import PageNotFound from "./pages/404";
 import NoMAtch from "./pages/404";
-import { Switch, Route, HashRouter } from "react-router-dom";
+import { Switch, Route, HashRouter, BrowserRouter } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 
 
 class Root extends Component {
   render() {
     return (
-      <HashRouter>
+      <HashRouter basename="/castro">
         <Switch>
           <Route
             exact
