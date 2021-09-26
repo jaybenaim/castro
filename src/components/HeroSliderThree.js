@@ -67,7 +67,7 @@ class HeroSliderThree extends Component{
         return(
             <div>
                 {/*====================  hero slider area ====================*/}
-                <div className="hero-alider-area">
+                <div className="hero-slider-area">
                     <Swiper {...sliderOptions}>
                         {DataList}
                     </Swiper>
