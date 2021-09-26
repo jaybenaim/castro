@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/castro/static/css/main.e2469981.chunk.css",
+    "main.css": "/castro/static/css/main.6299fc0d.chunk.css",
     "main.js": "/castro/static/js/main.adab924b.chunk.js",
     "main.js.map": "/castro/static/js/main.adab924b.chunk.js.map",
     "runtime-main.js": "/castro/static/js/runtime-main.f42483c7.js",
@@ -10,7 +10,7 @@
     "static/js/2.2204cec3.chunk.js.map": "/castro/static/js/2.2204cec3.chunk.js.map",
     "index.html": "/castro/index.html",
     "static/css/2.80d14ac3.chunk.css.map": "/castro/static/css/2.80d14ac3.chunk.css.map",
-    "static/css/main.e2469981.chunk.css.map": "/castro/static/css/main.e2469981.chunk.css.map",
+    "static/css/main.6299fc0d.chunk.css.map": "/castro/static/css/main.6299fc0d.chunk.css.map",
     "static/js/2.2204cec3.chunk.js.LICENSE.txt": "/castro/static/js/2.2204cec3.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/castro/static/media/lg.adb7aeef.svg",
     "static/media/hero-bg.75c63b33.jpg": "/castro/static/media/hero-bg.75c63b33.jpg"
@@ -19,7 +19,7 @@
     "static/js/runtime-main.f42483c7.js",
     "static/css/2.80d14ac3.chunk.css",
     "static/js/2.2204cec3.chunk.js",
-    "static/css/main.e2469981.chunk.css",
+    "static/css/main.6299fc0d.chunk.css",
     "static/js/main.adab924b.chunk.js"
   ]
 }
