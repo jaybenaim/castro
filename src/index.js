@@ -3,20 +3,21 @@ import "react-app-polyfill/stable";
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "./assets/scss/style.scss";
-// import HomeOne from "./HomeOne";
-// import HomeTwo from "./HomeTwo";
-// import HomeThree from "./HomeThree";
-// import About from "./pages/About";
-// import Services from "./service/Services";
-// import ServiceDetailsLeftSidebar from "./service/ServiceDetailsLeftSidebar";
-// import Projects from "./project/Projects";
-// import ProjectDetails from "./project/ProjectDetails";
-// import Contact from "./pages/Contact";
+import HomeOne from "./HomeOne";
+import HomeTwo from "./HomeTwo";
+import HomeThree from "./HomeThree";
+import About from "./pages/About";
+import Services from "./service/Services";
+import ServiceDetailsLeftSidebar from "./service/ServiceDetailsLeftSidebar";
+import Projects from "./project/Projects";
+import ProjectDetails from "./project/ProjectDetails";
+import Contact from "./pages/Contact";
 import PageNotFound from "./pages/404";
 import NoMAtch from "./pages/404";
 import { Switch, Route, HashRouter } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 import ComingSoon from "pages/ComingSoon/ComingSoon";
+import ServiceDetailsRightSidebar from "service/ServiceDetailsRightSidebar";
 
 
 class Root extends Component {
@@ -27,23 +28,6 @@ class Root extends Component {
           <Route
             exact
             path='/'
-            component={ComingSoon}
-          />
-
-          {/*
-          <Route
-            exact
-            path='/home-one'
-            component={HomeOne}
-          />
-          <Route
-            exact
-            path='/home-two'
-            component={HomeTwo}
-          />
-          <Route
-            exact
-            path='/home-three'
             component={HomeThree}
           />
           <Route
@@ -78,30 +62,9 @@ class Root extends Component {
           />
           <Route
             exact
-            path='/blog-left-sidebar'
-            component={BlogLeftSidebar}
-          />
-          <Route
-            exact
-            path='/blog-right-sidebar'
-            component={BlogRightSidebar}
-          />
-          <Route
-            exact
-            path='/blog-details-left-sidebar'
-            component={BlogDetailsLeftSidebar}
-          />
-          <Route
-            exact
-            path='/blog-details-right-sidebar'
-            component={BlogDetailsRightSidebar}
-          />
-          <Route
-            exact
             path='/contact-us'
             component={Contact}
           />
-           */}
           <Route
             exact
             path='/404'
