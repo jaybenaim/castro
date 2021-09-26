@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import HeroSliderThree from "components/HeroSliderThree";
 import image1 from "assets/img/landing/hero-bg.jpg"
 import { Link } from "react-router-dom";
 
